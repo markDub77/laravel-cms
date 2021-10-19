@@ -17,3 +17,18 @@ https://laravel.com/docs/8.x/valet
 `php artisan migrate`
 
 `php artisan route:list`
+
+
+Make the post model. The -m flag makes the migration for you
+
+`php artisan make:model post -m`
+
+Make the category model. The -m flag makes the migration for you
+
+`php artisan make:model category -m`
+
+Manually add custom tables like
+
+$table->string('title');
+
+$table->string('description');

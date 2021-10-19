@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
         <!-- Styles -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
         <!-- Scripts -->
@@ -29,7 +30,20 @@
 
             <!-- Page Content -->
             <main>
-                {{ $slot }}
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a href="">Posts</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-8">
+                            {{ $slot }}
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
     </body>
